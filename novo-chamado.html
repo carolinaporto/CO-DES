@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="'pt-BR">
-    <head>
-        <title> Tela de novo Chamado </title>
-        <meta charset="utf-8">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Chamado</title>
+</head>
 
-    <body>
+<body>
+    <header>
         <!-- Cabeçalho da página (Título + ícones) -->
-            <img src='img/menu-aberto.png'>
-            <h1>Novo Chamado</h1>
-            <img src="img/perfil.png"> 
+        <img src='img/menu-aberto.png'>
+        <h1>Novo Chamado</h1>
+        <img src="img/perfil.png"> 
+    </header>
 
+    <main>
         <!-- Formulário -->
-        
-            <!-- Local do ocorrido -->
-            <h3> Local</h3>
-            <br>
+    
+        <!-- Local do ocorrido -->
+        <h3>Local</h3>
+        <br>
 
-            <label for='andar'> Andar</label>
-            <input type="text" id='Andar'>
+        <label for='andar'>Andar</label>
+        <input type="text" id='Andar'>
 
-            <label for='torre'> Torre</label>
-            <input type="text" id="torre">
+        <label for='torre'>Torre</label>
+        <input type="text" id="torre">
 
-            <label for='outro'> Outro</label>
-            <input type="text" id="outro">
+        <label for='outro'>Outro</label>
+        <input type="text" id="outro">
 
-            <br>
+        <br>
 
-            <!-- Descrição da ocorrência -->
-            <textarea name="descricao" id="descricao" required placeholder="Descreva a ocorrência com detalhes"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-            <br>
-            <p> Ocorrência enviada</p>
-    </body>
+        <!-- Descrição da ocorrência -->
+        <textarea name="descricao" id="descricao" required placeholder="Descreva a ocorrência em detalhes!"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <p>Ocorrência enviada</p>
+    </main>
+</body>
 
 </html>
-
-
