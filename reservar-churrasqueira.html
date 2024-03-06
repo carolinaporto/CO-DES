@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva churrasqueira</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <a href="menu.html">
+            <img src="img/menu-aberto.png" alt="imagem de um menu lateral" width="80" height="80">
+        </a>
+        <h1>Churrasqueira</h1>
+        <img src="img/perfil.png" alt="icone perfil" width="60" height="60">
+    </header>
+
+    <!-- Parte principal da página -->
+    <main>
+
+        <!-- Imagem da churrasqueeira -->
+        <img src="https://fakeimg.pl/400x350" alt="Imagem de uma churrasqueira">
+
+        <!-- Data de reserva -->
+        <h2>Data</h2>
+        <input type="date" id="data_reserva" min="2024-1-01" max="2030-12-31"> 
+
+        <!-- Horário da reserva -->
+        <h2>Horário</h2>
+        <input type="checkbox" id="diaria_horario">
+        <label for="diaria_horario">O dia inteiro</label>
+
+        <input type="checkbox" id="customizar_horario">
+        <label for="customizar_horario">Customizar horário</label>
+
+        <label for="horario_inicial">Início</label>
+        <input type="time" id="horario_inicial" name="horario" min="07:00" max="22:00" required />
+
+        <label for="horario_final">Final</label>
+        <input type="time" id="horario_final" name="horario" min="07:00" max="22:00" required />
+
+        <!-- Botão para enviar o agendamento -->
+        <input type="button" value="ENVIAR" width="500" height="150"/>
+
+        <!-- Mensagem de confirmação após clicar em ENVIAR -->
+        <h2>Reserva confirmada!</h2>
+        <p>A churrasqueira foi reservada para o dia mm/dd/yyyy das --:-- -- às --:-- --</p>
+
+    </main>
+</body>
+</html>
