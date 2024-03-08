@@ -1,5 +1,6 @@
 # CO-DES
 Repositório criado para o desenvimento do projeto da disciplina de Co-designn de Aplicativos.
+
 Equipe composta pelos alunos: Maria Carolina Porto, Thomas Kassabian, Kaique Tinto, Morgan Carvalho, Eduardo Candeias. 
 
 O objetivo do aplicativo desenvolvido pela equipe é auxíliar moradores de condomínio, oferencendo diversas serviços, como:
