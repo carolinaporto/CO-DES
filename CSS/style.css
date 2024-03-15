@@ -11,25 +11,7 @@
     right: 1000px;
 }
 
-#aviso {
-    width: 35px;
-    position: left;
-    margin-left: 10px;
-}
-
-#assembleia {
-    width: 35px;
-    position: right;
-    margin-left: 10px;
-}
-
-#manutencao {
-    width: 35px;
-    position: right;
-    margin-left: 10px;
-}
-
-#reservar {
+.icones {
     width: 35px;
     position: right;
     margin-left: 10px;
