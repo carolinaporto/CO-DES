@@ -9,32 +9,62 @@
 <body>
     <!-- Cabeçalho da página (Título + ícones) -->
     <header>
-        <a href="menu.html">
-            <img src='img/menu-aberto.png' id="menu" alt="Imagem do menu">
-        </a>
-        <h1>Novo Chamado <img src="img/perfil.png" id="perfil" alt="Imagem do perfil do usuário"></h1> 
+        <section>
+            <a href="menu.html">
+                <img src='img/menu-aberto.png' id="menu" alt="Imagem do menu">
+            </a>
+            <h1>Novo Chamado</h1>
+            <a href="#">
+                <img src="img/perfil.png" id="perfil" alt="Imagem do perfil do usuário">
+            </a> 
+        </section>
     </header>
 
     <main>
         <!-- Formulário -->
-    
-        <!-- Descrição da ocorrência -->
-        <textarea name="descricao" id="descricao" required placeholder="Descreva a ocorrência em detalhes!"></textarea>
-        <input type="submit" value="Enviar">
-        
-        <!-- Local do ocorrido -->
-        <h3>Local</h3>
+        <ul>
+            <li>
+                <!-- Descrição da ocorrência -->
+                <h3>Ocorrência</h3>
+                <p>
+                    <textarea name="descricao" id="descricao" required placeholder="Descreva a ocorrência em detalhes!"></textarea>
+                </p>
+            </li>
 
-        <label for='andar'>Andar</label>
-        <input type="text" id='Andar'>
+            <li>
+                <p><h3>Local</h3></p>
+                <p>*Preencha os campos que se aplicam referentes ao local da ocorrência.</p>
+            </li>
 
-        <label for='torre'>Torre</label>
-        <input type="text" id="torre">
+            <li>
+                <p>
+                    <label for='andar'>Andar</label>
+                    <input type="text" id='Andar'>
+                </p>
+            </li>
 
-        <label for='outro'>Outro</label>
-        <input type="text" id="outro">
+            <li>
+                <p>
+                    <label for='torre'>Torre</label>
+                    <input type="text" id="torre">
+                </p>
+            </li>
 
-        <p>Ocorrência enviada</p>
+            <li>
+                <p>
+                    <label for='outro'>Outro</label>
+                    <input type="text" id="outro">
+                </p>
+            </li>
+
+            <li>
+                <input type="submit" value="Enviar">
+            </li>
+
+            <!-- <li>
+                <p>Ocorrência enviada</p>
+            </li> -->
+        </ul>
     </main>
 </body>
 

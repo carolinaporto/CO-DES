@@ -9,38 +9,80 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <a href="menu.html">
-            <img src="img/menu-aberto.png" id="menu" alt="imagem de um menu lateral">
-        </a>
-        <h1>Churrasqueira <img src="img/perfil.png" id="perfil" alt="Imagem do perfil do usuário"></h1>
+
+        <section>
+            <a href="menu.html">
+                <img src="img/menu-aberto.png" id="menu" alt="imagem de um menu lateral">
+            </a>
+            <h1>Churrasqueira</h1>
+            <a href="#">
+                <img src="img/perfil.png" id="perfil" alt="Imagem do perfil do usuário">
+            </a>
+        </section>
     </header>
 
     <!-- Parte principal da página -->
     <main>
 
-        <!-- Imagem da churrasqueira -->
-        <img src="https://fakeimg.pl/400x350" alt="Imagem de uma churrasqueira">
+        <ul>
+            <li>
+                <!-- Imagem da churrasqueira -->
+                <img class=img_pag_inteira src="https://fakeimg.pl/400x350" alt="Imagem de uma churrasqueira">
+            </li>
 
-        <!-- Data de reserva -->
-        <h2>Data</h2>
-        <input type="date" id="data_reserva" min="2024-1-01" max="2030-12-31"> 
+            <li>
+                <!-- Data de reserva -->
+                <h2>Data</h2>
+                <p>
+                    <input type="date" id="data_reserva" min="2024-1-01" max="2030-12-31"> 
+                </p>
+            </li>
 
-        <!-- Horário da reserva -->
-        <h2>Horário</h2>
-        <input type="checkbox" id="diaria_horario">
-        <label for="diaria_horario">O dia inteiro</label>
+            <li>
+                <!-- Horário da reserva -->
+                <h2>Horário</h2>
+                <p>
+                    <!-- <input type="checkbox" id="diaria_horario">
+                    <label for="diaria_horario">O dia todo (diária)</label> -->
+                    <label class="container">O dia todo (diária)
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </p>
+            </li>
 
-        <input type="checkbox" id="customizar_horario">
-        <label for="customizar_horario">Customizar horário</label>
+            <li>
+                <p>
 
-        <label for="horario_inicial">Início</label>
-        <input type="time" id="horario_inicial" name="horario" min="07:00" max="22:00" required />
+                    <label class="container">Customizar horário
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                      
+                    <!-- <input type="checkbox" id="customizar_horario">
+                    <label for="customizar_horario">Customizar horário</label> -->
+                </p>
+            </li>
 
-        <label for="horario_final">Final</label>
-        <input type="time" id="horario_final" name="horario" min="07:00" max="22:00" required />
+            <li>
+                <p>
+                    <label for="horario_inicial">Início</label>
+                    <input class="tab" type="time" id="horario_inicial" name="horario" min="07:00" max="22:00" required />
+                </p>
+            </li>
 
-        <!-- Botão para enviar o agendamento -->
-        <input type="button" value="ENVIAR"/>
+            <li>
+                <p>
+                    <label for="horario_final">Final</label>
+                    <input class="tab"type="time" id="horario_final" name="horario" min="07:00" max="22:00" required />
+                </p>
+            </li>
+
+            <li>
+                <!-- Botão para enviar o agendamento -->
+                <input type="submit" value="Enviar"/>
+            </li>
+        </ul>
 
         <!-- Mensagem de confirmação após clicar em ENVIAR -->
         <h2>Reserva confirmada!</h2>
