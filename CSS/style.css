@@ -37,6 +37,11 @@ img{
     height: 4rem;
     width: 4rem;
 }
+
+.menu_perfil{
+    width: 3rem;
+    height: 3rem;
+}
 .img_pag_inteira{
     width: 100%;
     height: auto;
@@ -58,7 +63,6 @@ li a{
     display: flex;
     margin: 1rem;
     border: 1px solid black;
-    border-radius: 20%;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     flex-direction: row;
     justify-content: space-between;
@@ -96,8 +100,33 @@ textarea{
     width: 100%;
 }
 
+.nome{
+    margin-bottom: 0.4rem;
+}
 
+.apto{
+    margin: 0.4rem;
+}
 
+/* FONTE TÍTULO - OPEN SANS */
+.titulo{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+/* FONTE TEXTO CORRIDO - NOTO SERIF */
+p{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 
 /* The container */
