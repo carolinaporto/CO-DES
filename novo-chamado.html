@@ -21,7 +21,7 @@
 <body>
     <!-- Cabeçalho da página (Título + ícones) -->
     <header>
-        <section>
+        <section class="row">
             <a href="menu.html">
                 <img src='img/menu-aberto.png' id="menu" alt="Imagem do menu">
             </a>
@@ -35,24 +35,19 @@
     <main>
         <!-- Formulário -->
         <ul>
-            <li>
-                <!-- Descrição da ocorrência -->
-                <h3 class="titulo">Ocorrência</h3>
-                <p>
-                    <textarea name="descricao" id="descricao" required placeholder="Descreva a ocorrência em detalhes!"></textarea>
-                </p>
+            <li class="column">
+                <h2 class="titulo">Ocorrência</h2>
+                <textarea name="descricao" id="descricao" required placeholder="Descreva a ocorrência em detalhes!"></textarea>
             </li>
 
             <li>
-                <p><h3 class="titulo">Local</h3></p>
+                <p><h2 class="titulo">Local</h2></p>
                 <p>*Preencha os campos que se aplicam referentes ao local da ocorrência.</p>
             </li>
 
             <li>
-                <p>
-                    <label for='andar'>Andar</label>
-                    <input type="text" id='Andar'>
-                </p>
+                <label for='andar'>Andar</label>
+                <input type="text" id='Andar'>
             </li>
 
             <li>
