@@ -17,7 +17,6 @@
 /* FONTE TÍTULO - OPEN SANS */
 .titulo{
     font-family: "Open Sans", "Roboto";
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-variation-settings:
@@ -27,7 +26,6 @@
 /* FONTE TEXTO CORRIDO - NOTO SERIF */
 p{
   font-family: "Noto Serif", "EB Garamond";
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
