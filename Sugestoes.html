@@ -16,12 +16,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
-    
+
+    <!-- Segunda fonte do título -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Segunda fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-    <section>
+    <section class="row">
       <a href="menu.html">
         <img src="img\menu-aberto.png" id="menu" alt="Imagem do menu">
       </a>
@@ -36,35 +45,27 @@
   <main>
       <ul>
         <li>
-          <h3 class="titulo">Sugestão</h3>
+          <h2 class="titulo">Sugestão</h2>
           <p><textarea id="story" name="story" rows="5" cols="33" placeholder="Escreva sua sugestão..."></textarea></p>
-          <p>A sua ideia será compartilhada com os condôminos!</p>
+          <p class="obs">A sua ideia será compartilhada com os condôminos!</p>
         </li>
 
         <li>
-          <h3 class="titulo">Deseja divulgar o seu nome?</h3>
+          <h2 class="titulo">Deseja divulgar o seu nome?</h2>
           <p>
-
             <label class="container">Sim
               <input type="radio" checked="checked" name="radio">
               <span class="checkmark"></span>
             </label>
-
-            <!-- <input type="checkbox" id="Padrão" name="Padrão" checked />
-            <label for="Padrão">Sim</label> -->
           </p>
         </li>
 
         <li>
           <p>
-
             <label class="container">Não (anônimo)
               <input type="radio" checked="checked" name="radio">
               <span class="checkmark"></span>
             </label>
-
-            <!-- <input type="checkbox" id="Anônimo" name="Anônimo" />
-            <label for="Anônimo">Não (anônimo)</label> -->
           </p>
         </li>
 
