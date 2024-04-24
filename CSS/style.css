@@ -17,7 +17,6 @@
 /* FONTE TÍTULO - OPEN SANS */
 .titulo{
     font-family: "Open Sans", "Roboto";
-    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-variation-settings:
@@ -27,7 +26,6 @@
 /* FONTE TEXTO CORRIDO - NOTO SERIF */
 p{
   font-family: "Noto Serif", "EB Garamond";
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
@@ -66,6 +64,10 @@ p{
     font-size: 0.8rem;
 }
 
+ul{
+    width: 100%;
+}
+
 li{
     margin: 0.5rem 0 0.5rem 0;
 }
@@ -88,9 +90,8 @@ header img{
     width: 2rem;
 }
 
-
 main section{
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 main a{
@@ -139,6 +140,11 @@ header div{
 
 /* PÁGINAS ESPECÍFICAS */
 
+label{
+    display:inline-block;
+    width: 3rem;
+}
+
 .obs{
     font-size: 0.6rem;
 }
@@ -167,8 +173,7 @@ input[type="submit"]{
 }
 
 textarea{
-    width: 95%;
-    margin-right: 1rem;
+    width: 98%;
     font-family: "Noto Serif", serif;
     font-size: 0.8rem;
 }

@@ -50,7 +50,7 @@
             <li>
                 <h2 class="titulo">Data</h2>
                 <p>
-                    <input type="date" id="data_reserva" min="2024-1-01" max="2030-12-31"> 
+                    <input type="date" id="data_reserva" min="2024-01-01" max="2030-12-31"> 
                 </p>
             </li>
 
@@ -83,13 +83,15 @@
             <li>
                 <p>
                     <label for="horario_final">Final</label>
-                    <input class="tab"type="time" id="horario_final" name="horario" min="07:00" max="22:00" required />
+                    <input class="tab" type="time" id="horario_final" name="horario" min="07:00" max="22:00" required />
                 </p>
             </li>
 
             <li>
                 <!-- Botão para enviar o agendamento -->
-                <input type="submit" value="Enviar"/>
+                <form action="index.html">
+                    <input type="submit" value="Enviar"/>
+                </form>
             </li>
         </ul>
     </main>
