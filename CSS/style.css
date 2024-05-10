@@ -100,14 +100,27 @@ main a{
     border-radius: 15px;
     text-decoration: none;
     color: black;
+    background-color: #FFF0E6;
+}
+
+main a:hover{
+    background-color: #FF944D;
+    color: white;
 }
 
 .alt{
     height: 3rem;
 }
 
-/* MENU  */
+.seta_voltar{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    top: 0.5rem;
+    left: 3rem;
+}
 
+/* MENU  */
 header div{
     display: flex;
     flex-direction: column;
