@@ -123,9 +123,22 @@ header div{
     height: 10rem;
 }
 
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .ft_perfil{
     height: 7rem;
     width: 7rem;
+}
+
+.logo_app{
+    padding-top: 8rem;
+    height:  10rem;
+    width: 10rem;
 }
 
 .right{
