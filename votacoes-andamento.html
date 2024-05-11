@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/em-andamento.js"></script>
+
+    <!-- fonte titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- fonte corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Segunda fonte do título -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Segunda fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <section class="row">
+            <a href="menu.html">
+                <img src="img/menu-aberto.png" id="menu" alt="Imagem do menu">
+            </a>
+            <h1 class="titulo">Em Andamento</h1>
+            <a href="#">
+                <img src="img/perfil.png" id="perfil" alt="Imagem do perfil do usuário">
+            </a>
+        </section>
+        <a href="Assembleia.html">
+            <img class="seta_voltar" src="img/voltar.png" alt="">
+        </a>
+    </header>
+
+    <!-- Parte principal da página -->
+    <main>
+        <form type="get" action="Assembleia.html">
+            <table class="wide new line">
+                <tr>
+                    <td><h2 class="titulo">Sugestão</h2></td>
+                </tr>
+                <tr>
+                    <td><p class="obs uma_linha" id="nome_usuario"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="uma_linha" id="nova_sugestao"></p></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img class="votacao" id="like" src="img/like.png" alt="">
+                        <img class="votacao" id="dislike" src="img/dislike.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="uma_linha"></p></td>
+                </tr>
+            </table>
+
+            <table class="wide line">
+                <tr>
+                    <td><h2 class="titulo">Sugestão</h2></td>
+                </tr>
+                <tr>
+                    <td><p class="obs enfase uma_linha" id="nome_usuario">joaocarlos</p></td>
+                </tr>
+                <tr>
+                    <td><p class="uma_linha" id="nova_sugestao">Sugiro que a área comum seja limpa duas vezes por semana, ao invés de uma.</p></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img class="votacao" id="like" src="img/like.png" alt="">
+                        <img class="votacao" id="dislike" src="img/dislike.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="uma_linha"></p></td>
+                </tr>
+            </table>
+
+
+        </form>
+</body>
+
+</html>
