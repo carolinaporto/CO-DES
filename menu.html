@@ -7,6 +7,8 @@
     <title>Menu</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/menu.js"></script>
+
 
     <!-- fonte titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,20 +31,19 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="menu_lateral bg_laranja">
     <!-- Cabeçalho -->
-    <header class="menu">
+    <header class="menu bg_cinza ">
         <a href="index.html">
             <img class="right" src="img/setinha_menu.png" id="voltar" alt="Imagem com uma seta para voltar">
         </a>
-
-
         <div>
             <img class="ft_perfil" src="img/perfil.png" id="menu" alt="Imagem do perfil do usuário">
-            <p class="nome">NOME DO USUÁRIO</p>
-            <p>APTO 416</p>
+            <p class="nome" id="username">NOME DO USUÁRIO</p>
+            <p class="uma_linha" id="apt">APTO 416</p>
         </div>
     </header>
+    
     <main>
         <ul>
             <li>
@@ -76,6 +77,13 @@
             <li>
                 <a class="row alt" href="reservar.html">
                     <h2 class="titulo">Reservar</h2>
+                    <img src="img/setinha_menu.png" id="seta_voltar5" alt="Imagem com uma seta para voltar">
+                </a>
+            </li>
+
+            <li>
+                <a class="row alt bg_cinza" href="login.html">
+                    <h2 class="titulo">Sair</h2>
                     <img src="img/setinha_menu.png" id="seta_voltar5" alt="Imagem com uma seta para voltar">
                 </a>
             </li>

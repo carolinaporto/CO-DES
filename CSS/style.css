@@ -132,7 +132,7 @@ main a:hover{
     left: 3rem;
 }
 
-/* MENU  */
+/* menu */
 header div{
     display: flex;
     flex-direction: column;
@@ -145,10 +145,13 @@ header div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10rem;
+    height: 40vh;
+    border-radius: 15px;
+    border: solid 0.1rem black;
 }
 
 .login{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,13 +166,10 @@ header div{
     padding-bottom: 1.2rem;
 }
 
-.wide{
-    width: 100%;
-}
 
 .ft_perfil{
-    height: 7rem;
-    width: 7rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .logo_app{
@@ -181,13 +181,14 @@ header div{
 
 .right{
     position: absolute;
-    right: 0;
+    right: 0rem;
     top: 0;
 }
 
 .nome{
-    margin: 0.5rem;
+    margin: 0.7rem;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .bg_laranja{
@@ -195,6 +196,9 @@ header div{
 }
 .bg_laranja_claro{
     background-color: #FFF0E6;
+}
+.bg_cinza{
+    background-color: #C7C7C7;
 }
 
 /* PÁGINAS ESPECÍFICAS */
@@ -210,6 +214,8 @@ label{
 }
 .enfase{
     font-weight: bold;
+}
+.text_laranja{
     color: #FF7F27;
 }
 
@@ -256,26 +262,38 @@ textarea{
     font-size: 0.8rem;
 }
 
+select{
+    font-family: "Noto Serif", serif;
+    font-size: 0.8rem;
+    width: 40%;
+}
+
 .tabela{
     width: 100%;
     border-collapse: collapse;
     border: black solid 0.1rem;
     border-radius: 15px;
 }
-
-.text_right{
-    text-align: right;
+.wide{
+    width: 100%;
+}
+.t20{
+    width: 20%;
+}
+.t30{
+    width: 30%;
 }
 
 .new{
-    opacity: 0;
-    transition: opacity 1s;
-}
-.visible{
-    opacity: 1;
+    display: none;
 }
 
-.votacao{
+.like{
+    width: 8%;
+    height: auto;
+    padding: 0 0.6rem 0 0.6rem;
+}
+.dislike{
     width: 8%;
     height: auto;
     padding: 0 0.6rem 0 0.6rem;
@@ -320,3 +338,9 @@ textarea{
   .container input:checked ~ .checkmark {
     background-color: #FF7F27;
   }
+
+
+    /* Show the indicator (dot/circle) when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }

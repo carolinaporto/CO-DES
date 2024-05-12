@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    sugestao = document.getElementById('enviar_sugestao');
-    sugestao.addEventListener('click', function () {
+    sugestao = document.getElementById('sugestao_topico');
+    sugestao.addEventListener('submit', function () {
 
         texto_sugestao = document.getElementById('sugestao');
         localStorage.setItem('sugestao', texto_sugestao.value);
@@ -13,5 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else if (nome[1].checked) {
             localStorage.setItem('Comparilhar_nome', "Não (anônimo)");
         }
+        alert('Sugestão enviada com sucesso!\nClique na aba "Votações em Andamento" para visualizar sua sugestão!');
+
     });
-    });
+});
