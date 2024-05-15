@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva churrasqueira</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
-    
+    <script src="JS/churrasqueira.js"></script>
+
     <!-- fonte titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header>
@@ -47,58 +50,64 @@
 
     <!-- Parte principal da página -->
     <main>
+        <form action="Reservar.html">
+            <ul>
+                <li>
+                    <img class="churrasqueira" src="img/churrasqueira-exemplo.png" alt="">
+                </li>
+                <li>
+                    <h2 class="titulo">Data</h2>
+                    <p>
+                        <input type="date" id="data_reserva" min="2024-01-01" max="2030-12-31" required>
+                    </p>
+                </li>
 
-        <ul>
-            <li>
-                <img class="churrasqueira" src="img/churrasqueira-exemplo.png" alt="">
-            </li>
-            <li>
-                <h2 class="titulo">Data</h2>
-                <p>
-                    <input type="date" id="data_reserva" min="2024-01-01" max="2030-12-31"> 
-                </p>
-            </li>
+                <li>
+                    <h2 class="titulo">Período</h2>
+                    <p>
+                        <label class="container">O dia inteiro
+                            <input type="radio" checked="checked" name="radio" id="dia">
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                </li>
 
-            <li>
-                <h2 class="titulo">Período</h2>
-                <p>
-                    <label class="container">O dia inteiro
-                        <input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                </p>
-            </li>
+                <li>
+                    <p>
+                        <label class="container">Customizar horário
+                            <input type="radio" name="radio" id="customizar">
+                            <span class="checkmark"></span>
+                        </label>
+                    </p>
+                </li>
 
-            <li>
-                <p>
-                    <label class="container">Customizar horário
-                        <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
-                </p>
-            </li>
+                <div class="dia_inteiro">
+                    <li>
+                        <p>
+                            <label for="horario_inicial">Início</label>
+                            <input class="tab" type="time" id="horario_inicial" name="horario" min="07:00" max="22:00"/>
+                        </p>
+                    </li>
 
-            <li>
-                <p>
-                    <label for="horario_inicial">Início</label>
-                    <input class="tab" type="time" id="horario_inicial" name="horario" min="07:00" max="22:00" required />
-                </p>
-            </li>
+                    <li>
+                        <p>
+                            <label for="horario_final">Final</label>
+                            <input class="tab" type="time" id="horario_final" name="horario" min="07:00" max="22:00" />
+                        </p>
+                    </li>
+                </div>
 
-            <li>
-                <p>
-                    <label for="horario_final">Final</label>
-                    <input class="tab" type="time" id="horario_final" name="horario" min="07:00" max="22:00" required />
-                </p>
-            </li>
 
-            <li>
-                <!-- Botão para enviar o agendamento -->
-                <form action="index.html">
-                    <input type="submit" value="Enviar"/>
-                </form>
-            </li>
-        </ul>
+
+                <li>
+                    <!-- Botão para enviar o agendamento -->
+                    <input type="submit" value="Enviar" id="botao"/>
+                </li>
+            </ul>
+        </form>
+
+
     </main>
 </body>
+
 </html>
