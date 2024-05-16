@@ -40,6 +40,9 @@ p{
     padding: 0 0.5rem 0 0.5rem;
     font-size: 0.8rem;
 }
+.linha{
+    border-top: #FF944D 0.1rem solid;
+}
 .uma_linha{
     padding-bottom: 1rem;
 }
