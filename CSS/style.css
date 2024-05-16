@@ -210,7 +210,8 @@ header div{
 }
 
 /* PÁGINAS ESPECÍFICAS */
-.horario_reservado{
+.horario_reservado, .reserva_churrasqueira, .reserva_quadra, .reserva_salao{
+    border-top: #FF944D 0.1rem dashed;
     display: none;
 }
 .reserva_diaria{
@@ -350,6 +351,16 @@ select{
     width: 8%;
     height: auto;
     padding: 0 0.6rem 0.6rem 0.6rem;
+}
+.lixeira{
+    width: 6%;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.relative{
+    position: relative;
 }
 
 .text_right{

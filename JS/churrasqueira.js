@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+
     // radio buttom "O dia inteiro"
     let dia = document.getElementById('dia');
 
@@ -27,13 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Armazena o dia da reserva
-    let data_reserva = document.getElementById('data_reserva');
-    localStorage.setItem('dia', data_reserva.value);
 
     // Botao enviar
     let botao = document.getElementById('botao');
     botao.addEventListener('click', function () {
+        
+        // Armazena o dia da reserva
+        let data_reserva = document.getElementById('data_reserva');
+        localStorage.setItem('dia', data_reserva.value);
+
+        localStorage.removeItem("dia")
+        localStorage.removeItem("horario")
+        localStorage.removeItem("horainicio")
+        localStorage.removeItem("horafinal")
         let horario_final = document.getElementById('horario_final');
         let horario_inicial = document.getElementById('horario_inicial');
 

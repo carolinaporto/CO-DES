@@ -27,13 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Armazena o dia da reserva
-    let data_reserva = document.getElementById('data_reserva_quadra');
-    localStorage.setItem('dia_quadra', data_reserva.value);
 
     // Botao enviar
     let botao = document.getElementById('botao');
     botao.addEventListener('click', function () {
+        // Armazena o dia da reserva
+        let data_reserva = document.getElementById('data_reserva_quadra');
+        localStorage.setItem('dia_quadra', data_reserva.value);
+
+        localStorage.removeItem("dia_quadra")
+        localStorage.removeItem("horario_quadra")
+        localStorage.removeItem("horainicio_quadra")
+        localStorage.removeItem("horafinal_quadra")
         let horario_final = document.getElementById('horario_final_quadra');
         let horario_inicial = document.getElementById('horario_inicial_quadra');
 
@@ -46,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("Reserva realizada com sucesso!\n\nDia: " + data_reserva_quadra.value + "\nHorário: " + horario_inicial_quadra.value + " - " + horario_final_quadra.value + "\n\nObrigado!");
         }
         else {
-            localStorage.setItem('horario', "Diária");
+            localStorage.setItem('horario_quadra', "Diária");
             alert("Reserva realizada com sucesso!\n\nDia: " + data_reserva_quadra.value + "\nHorário: Diária" + "\n\nObrigado!");
         }
 

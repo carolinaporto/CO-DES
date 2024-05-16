@@ -7,7 +7,7 @@
     <title>Reservar</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/ver-reserva-churrasqueira.js"></script>
+    <script src="JS/ver-reserva.js"></script>
 
     <!-- fonte titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,27 +50,83 @@
     <main>
         <ul id="horario_reservado" class="top tabela horario_reservado center bg_laranja_claro">
             <li>
-                <h1 class="enfase">Você tem uma reserva!</h1>
+                <h1 class="enfase">Suas reservas:</h1>
             </li>
-            <li>
-                <p class="enfase text_laranja">Churrasqueira</p>
-            </li>
-            <li class="" >
-                <p class="enfase meia_linha" id="data_reserva">Dia: </p>
-                <p id="dia_da_reserva"></p>
-            </li>
-            <li id="reserva_diaria" class="reserva_diaria ">
-                <p class="enfase meia_linha">Horário: </p>
-                <p id="hora_diaria"></p>
-            </li>
-            <li class="reserva_custom ">
-                <p class="enfase meia_linha">Horário Início: </p>
-                <p id="hora_inicio"></p>
-            </li>
-            <li class="reserva_custom">
-                <p class="enfase meia_linha">Horário Final: </p>
-                <p id="hora_final"></p>
-            </li>
+
+            <div id="reserva_churrasqueira" class="reserva_churrasqueira relative">
+                <li>
+                    <p class="enfase text_laranja">Churrasqueira</p>
+                </li>
+                <li class="">
+                    <p class="enfase meia_linha" id="data_reserva">Dia: </p>
+                    <p id="dia_da_reserva"></p>
+                </li>
+                <li id="reserva_diaria" class="reserva_diaria ">
+                    <p class="enfase meia_linha">Horário: </p>
+                    <p id="hora_diaria"></p>
+                </li>
+                <li class="reserva_custom ">
+                    <p class="enfase meia_linha">Horário Início: </p>
+                    <p id="hora_inicio"></p>
+                </li>
+                <li class="reserva_custom">
+                    <p class="enfase meia_linha">Horário Final: </p>
+                    <p id="hora_final"></p>
+                </li>
+                <li>
+                    <img id="lixo" class="lixeira" src="img/lixeira.png" alt="">
+                </li>
+            </div>
+
+            <div id="reserva_quadra" class="reserva_quadra relative">
+                <li>
+                    <p class="enfase text_laranja">Quadra</p>
+                </li>
+                <li class="">
+                    <p class="enfase meia_linha" id="data_reserva_quadra">Dia: </p>
+                    <p id="dia_da_reserva_quadra"></p>
+                </li>
+                <li id="reserva_diaria_quadra" class="reserva_diaria_quadra ">
+                    <p class="enfase meia_linha">Horário: </p>
+                    <p id="hora_diaria_quadra"></p>
+                </li>
+                <li class="reserva_custom_quadra ">
+                    <p class="enfase meia_linha">Horário Início: </p>
+                    <p id="hora_inicio_quadra"></p>
+                </li>
+                <li class="reserva_custom_quadra">
+                    <p class="enfase meia_linha">Horário Final: </p>
+                    <p id="hora_final_quadra"></p>
+                </li>
+                <li>
+                    <img id="lixo_quadra" class="lixeira" src="img/lixeira.png" alt="">
+                </li>
+            </div>
+
+            <div id="reserva_salao" class="reserva_salao relative">
+                <li>
+                    <p class="enfase text_laranja">Salão de Festas</p>
+                </li>
+                <li class="">
+                    <p class="enfase meia_linha" id="data_reserva_salao">Dia: </p>
+                    <p id="dia_da_reserva_salao"></p>
+                </li>
+                <li id="reserva_diaria_salao" class="reserva_diaria_salao ">
+                    <p class="enfase meia_linha">Horário: </p>
+                    <p id="hora_diaria_salao"></p>
+                </li>
+                <li class="reserva_custom_salao ">
+                    <p class="enfase meia_linha">Horário Início: </p>
+                    <p id="hora_inicio_salao"></p>
+                </li>
+                <li class="reserva_custom_salao">
+                    <p class="enfase meia_linha">Horário Final: </p>
+                    <p id="hora_final_salao"></p>
+                </li>
+                <li>
+                    <img id="lixo_salao" class="lixeira" src="img/lixeira.png" alt="">
+                </li>
+            </div>
         </ul>
 
 
