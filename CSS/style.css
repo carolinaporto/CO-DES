@@ -311,8 +311,14 @@ select{
 .t30{
     width: 30%;
 }
+.t40{
+    width: 40%;
+}
 .t50{
     width: 50%;
+}
+.t60{
+    width: 60%;
 }
 .t80{
     width: 80%;
@@ -323,6 +329,11 @@ select{
 
 .new{
     display: none;
+    width: 100%;
+}
+.ocorrencia{
+    display: none;
+    width: 100%;
 }
 
 .like{
@@ -334,6 +345,15 @@ select{
     width: 8%;
     height: auto;
     padding: 0 0.6rem 0 0.6rem;
+}
+.lixo{
+    width: 8%;
+    height: auto;
+    padding: 0 0.6rem 0.6rem 0.6rem;
+}
+
+.text_right{
+    text-align: right;
 }
 .line{
     border-bottom: 0.1rem solid gray;

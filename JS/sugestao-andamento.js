@@ -14,7 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
  
     let newElement = document.querySelector('.new');
-    newElement.style = 'display: block';
+    if (localStorage.getItem('sugestao') == null) {
+        newElement.style = 'display: none';
+    } else{
+        newElement.style = 'display: block';
+    }
+
+    lixo = document.querySelector('.lixo');
+    lixo.addEventListener('click', function () {
+        localStorage.removeItem('sugestao');
+        newElement.style = 'display: none';
+    });
 
     // botão like e dislike
     let like = document.getElementsByClassName('like');

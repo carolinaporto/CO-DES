@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     // CHAMADOS EM ANDAMENTO
     addChamado = document.getElementById('ocorrencia');
@@ -9,9 +9,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     torre = document.getElementById('torre');
     torre.innerHTML = localStorage.getItem('selectedTorre');
-    
-    novoChamado = document.querySelectorAll('.new');
-    for (let i = 0; i < novoChamado.length; i++) {
-        novoChamado[i].style = 'display: block';
+
+    let novoChamado = document.querySelector('.ocorrencia');
+    if (localStorage.getItem('descricao') == null) {
+        novoChamado.style = 'display: none';
+    } else{
+        novoChamado.style = 'display: block';
     }
+    
+
+    lixo = document.querySelector('.lixo');
+    lixo.addEventListener('click', function () {
+        localStorage.removeItem('descricao');
+        localStorage.removeItem('selectedAndar');
+        localStorage.removeItem('selectedTorre');
+            novoChamado.style = 'display: none';
+
+    });
 });
