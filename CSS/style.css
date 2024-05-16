@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* FONTE TÍTULO - OPEN SANS */
@@ -36,9 +37,17 @@ p{
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 0.8rem;
 }
 .uma_linha{
     padding-bottom: 1rem;
+}
+.meia_linha{
+    padding-bottom: 0.5rem;
+}
+.top{
+    margin-top: 0.5rem;
 }
 
 /* SEGUNDA FONTE TÍTULO */
@@ -66,12 +75,9 @@ h1{
 
 h2{
     font-size: 1rem;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-p{
-    font-size: 0.8rem;
-}
 
 ul{
     width: 100%;
@@ -204,6 +210,16 @@ header div{
 }
 
 /* PÁGINAS ESPECÍFICAS */
+.horario_reservado{
+    display: none;
+}
+.reserva_diaria{
+    display: none;
+}
+.reserva_custom{
+    display: none;
+}
+
 .churrasqueira{
     width: 100%;
     height: auto;
@@ -226,6 +242,9 @@ label{
 }
 .text_laranja{
     color: #FF7F27;
+}
+.text_white{
+    color: white;
 }
 
 input[type="checkbox"]{
@@ -291,6 +310,15 @@ select{
 }
 .t30{
     width: 30%;
+}
+.t50{
+    width: 50%;
+}
+.t80{
+    width: 80%;
+}
+.text_justify{
+    text-align: justify;
 }
 
 .new{

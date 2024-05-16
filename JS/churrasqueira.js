@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // radio buttom "O dia inteiro"
     let dia = document.getElementById('dia');
+
+    // radio buttom "Customizar"
     let customizar = document.getElementById('customizar');
+
+    // div que contém os horários
     let horarios = document.querySelector(".dia_inteiro");
 
 
@@ -8,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (customizar.checked) {
             horarios.style.display = "block";
         }
-        else{
+        else {
             horarios.style.display = "none";
         }
     });
@@ -16,33 +22,33 @@ document.addEventListener('DOMContentLoaded', function () {
         if (dia.checked) {
             horarios.style.display = "none";
         }
-        else{
+        else {
             horarios.style.display = "block";
         }
     });
 
-
-    let botao = document.getElementById('botao');
-    let horario_final = document.getElementById('horario_final');
-    let horario_inicial = document.getElementById('horario_inicial');
+    // Armazena o dia da reserva
     let data_reserva = document.getElementById('data_reserva');
+    localStorage.setItem('dia', data_reserva.value);
 
-    botao.addEventListener('sumbit', function () {
-        churrasqueira = document.getElementById('churrasqueira');
+    // Botao enviar
+    let botao = document.getElementById('botao');
+    botao.addEventListener('click', function () {
+        let horario_final = document.getElementById('horario_final');
+        let horario_inicial = document.getElementById('horario_inicial');
 
         localStorage.setItem('dia', data_reserva.value);
-        
+
         if (customizar.checked) {
-            localStorage.setItem('hora inicio', horario_inicial.value);
-            localStorage.setItem('hora final', horario_final.value);
-            
+            localStorage.setItem('horainicio', horario_inicial.value);
+            localStorage.setItem('horafinal', horario_final.value);
+
             alert("Reserva realizada com sucesso!\n\nDia: " + data_reserva.value + "\nHorário: " + horario_inicial.value + " - " + horario_final.value + "\n\nObrigado!");
         }
-        else{
+        else {
             localStorage.setItem('horario', "Diária");
             alert("Reserva realizada com sucesso!\n\nDia: " + data_reserva.value + "\nHorário: Diária" + "\n\nObrigado!");
         }
 
-       
     });
 }); 

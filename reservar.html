@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
-    
+    <script src="JS/ver-reserva-churrasqueira.js"></script>
+
     <!-- fonte titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header>
@@ -45,22 +48,48 @@
     </header>
 
     <main>
+        <ul id="horario_reservado" class="top tabela horario_reservado center bg_laranja_claro">
+            <li>
+                <h1 class="enfase">Você tem uma reserva!</h1>
+            </li>
+            <li>
+                <p class="enfase text_laranja">Churrasqueira</p>
+            </li>
+            <li class="" >
+                <p class="enfase meia_linha" id="data_reserva">Dia: </p>
+                <p id="dia_da_reserva"></p>
+            </li>
+            <li id="reserva_diaria" class="reserva_diaria ">
+                <p class="enfase meia_linha">Horário: </p>
+                <p id="hora_diaria"></p>
+            </li>
+            <li class="reserva_custom ">
+                <p class="enfase meia_linha">Horário Início: </p>
+                <p id="hora_inicio"></p>
+            </li>
+            <li class="reserva_custom">
+                <p class="enfase meia_linha">Horário Final: </p>
+                <p id="hora_final"></p>
+            </li>
+        </ul>
+
 
         <ul>
             <li>
                 <a class="row alt" href="reservar-churrasqueira.html">
                     <h2 class="titulo">Churrasqueira</h2>
-                    <img src="img/churrasqueira.png" id="churrasqueira" alt="Imagem de uma churrasqueira" class="icones">
+                    <img src="img/churrasqueira.png" id="churrasqueira" alt="Imagem de uma churrasqueira"
+                        class="icones">
                 </a>
             </li>
-        
+
             <li>
                 <a class="row alt" href="#">
                     <h2 class="titulo">Salão de Festas</h2>
                     <img src="img/salao-festas.png" id="baloes" alt="Imagem de balões de festa" class="icones">
                 </a>
             </li>
-            
+
             <li>
                 <a class="row alt" href="#">
                     <h2 class="titulo">Quadras</h2>
@@ -69,7 +98,8 @@
             </li>
 
         </ul>
-        
+
     </main>
 </body>
+
 </html>
