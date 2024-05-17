@@ -327,10 +327,6 @@ select{
 .t80{
     width: 80%;
 }
-.text_justify{
-    text-align: justify;
-}
-
 .new{
     display: none;
     width: 100%;
