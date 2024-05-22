@@ -377,9 +377,6 @@ select{
     position: relative;
     padding-left: 2rem;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
   

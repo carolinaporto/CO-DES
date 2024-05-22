@@ -8,23 +8,27 @@ document.addEventListener('DOMContentLoaded', function () {
     let customizar = document.getElementById('customizar');
 
     // div que contém os horários
-    let horarios = document.querySelector(".dia_inteiro");
+    let horarios = document.querySelectorAll(".dia_inteiro");
 
 
     customizar.addEventListener('change', function () {
         if (customizar.checked) {
-            horarios.style.display = "block";
+            horarios[0].style.display = "block";
+            horarios[1].style.display = "block";
         }
         else {
-            horarios.style.display = "none";
+            horarios[0].style.display = "none";
+            horarios[1].style.display = "none";
         }
     });
     dia.addEventListener('change', function () {
         if (dia.checked) {
-            horarios.style.display = "none";
+            horarios[0].style.display = "none";
+            horarios[1].style.display = "none";
         }
         else {
-            horarios.style.display = "block";
+            horarios[0].style.display = "block";
+            horarios[1].style.display = "block";
         }
     });
 
