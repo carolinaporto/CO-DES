@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // CHAMADOS EM ANDAMENTO
-    addChamado = document.getElementById('ocorrencia');
+    addChamado = document.getElementById('ocorrencia1');
     addChamado.innerHTML = localStorage.getItem('descricao');
 
     andar = document.getElementById('andar');
