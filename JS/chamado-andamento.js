@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     addChamado = document.getElementById('ocorrencia1');
     addChamado.innerHTML = localStorage.getItem('descricao');
 
-    andar = document.getElementById('andar');
+    andar = document.getElementById('andar1');
     andar.innerHTML = localStorage.getItem('selectedAndar');
 
-    torre = document.getElementById('torre');
+    torre = document.getElementById('torre1');
     torre.innerHTML = localStorage.getItem('selectedTorre');
 
     let novoChamado = document.querySelector('.ocorrencia');
